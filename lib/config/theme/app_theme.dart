@@ -13,6 +13,6 @@ class AppTheme {
   ThemeData getTheme() => ThemeData(
         useMaterial3: true,
         colorSchemeSeed: colors[selectedColor],
-        brightness: isDarkMode ? Brightness.light : Brightness.dark,
+        brightness: isDarkMode ? Brightness.dark : Brightness.light,
       );
 }
