@@ -5,7 +5,7 @@ class MovieMapper {
   static Movie movieDBToEntity(MovieDB movieDB) => Movie(
       adult: movieDB.adult ?? false,
       backdropPath: (movieDB.backdropPath == '')  
-      ? 'https://picsum.photos/200/300'
+      ? 'no-poster'
       : 'https://image.tmdb.org/t/p/w500${movieDB.backdropPath}'
       ,
       genreIds: movieDB.genreIds.map((e) => e.toString()).toList(),
@@ -16,8 +16,9 @@ class MovieMapper {
       popularity: movieDB.popularity,
       posterPath: (movieDB.posterPath == '')  
       ? 'no-poster'
-      : 'https://image.tmdb.org/t/p/w500${movieDB.posterPath}',
-      releaseDate: movieDB.releaseDate,
+      : 'https://image.tmdb.org/t/p/w500${movieDB.posterPath}'
+      ,
+      releaseDate: (movieDB.releaseDate != null) ? movieDB.releaseDate : null,
       title: movieDB.title,
       video: movieDB.video,
       voteAverage: movieDB.voteAverage,
