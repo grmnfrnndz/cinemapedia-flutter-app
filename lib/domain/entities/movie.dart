@@ -15,7 +15,7 @@ class Movie {
   final int voteCount;
 
   Movie({
-    required this.adult,
+    this.adult = false,
     required this.backdropPath,
     required this.genreIds,
     required this.id,
