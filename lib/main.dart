@@ -16,9 +16,11 @@ Future<void> main() async {
     // ref all providers impl of riverpod (ProviderScope)
     const ProviderScope(child: MyApp())
   );
-  }
+
+}
 
 class MyApp extends StatelessWidget {
+  
   const MyApp({super.key});
 
   @override
@@ -30,4 +32,5 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
     );
   }
+
 }
