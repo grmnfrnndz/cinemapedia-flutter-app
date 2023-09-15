@@ -9,6 +9,8 @@ import 'package:cinemapedia/presentation/providers/providers.dart';
 
 
 class HomeView extends ConsumerStatefulWidget {
+  const HomeView({super.key});
+
 
   @override
   ConsumerState<HomeView> createState() => HomeViewState();

@@ -6,6 +6,11 @@ A new Flutter project.
 
 1. Rename file .env.template to .env
 2. Set value of variable
+3. run 
+
+```
+dart run build_runner build
+```
 
 
 ## Getting Started

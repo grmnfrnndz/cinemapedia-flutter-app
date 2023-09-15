@@ -38,7 +38,7 @@ class SearchMovieDelegate extends SearchDelegate<Movie?> {
 
   void _onQueryChanged(String query) {
 
-      print('query string changed');
+      // print('query string changed');
 
       if(_debounceTimer?.isActive ?? false) _debounceTimer!.cancel();
   

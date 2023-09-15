@@ -1,3 +1,5 @@
+export 'package:cinemapedia/presentation/widgets/movies/movie_masonry.dart';
+export 'package:cinemapedia/presentation/widgets/movies/movie_poster_link.dart';
 export 'package:cinemapedia/presentation/widgets/movies/movies_horizontal_listview.dart';
 export 'package:cinemapedia/presentation/widgets/movies/movies_slide_show.dart';
 export 'package:cinemapedia/presentation/widgets/shared/custom_appbar.dart';
